@@ -2,11 +2,11 @@ package laboratorio.pkg8;
 
 
 public class Hadas {
-    private String nombre;
-    private int edad;
-    private double salud;
-    private int estatura;
-    private int poder;
+    protected String nombre;
+    protected int edad;
+    protected double salud;
+    protected int estatura;
+    protected int poder;
 
     public Hadas() {
     }
