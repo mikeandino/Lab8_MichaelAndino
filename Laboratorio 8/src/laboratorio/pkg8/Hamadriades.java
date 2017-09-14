@@ -19,6 +19,6 @@ public class Hamadriades extends Hadas{
 
     @Override
     public String toString() {
-        return "Hamadriades{" + '}';
+        return nombre;
     }
 }

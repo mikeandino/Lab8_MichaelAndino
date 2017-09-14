@@ -1,12 +1,15 @@
 package laboratorio.pkg8;
 
+import java.io.Serializable;
 
-public class Hadas {
+
+public class Hadas implements Serializable{
     protected String nombre;
     protected int edad;
     protected double salud;
     protected int estatura;
     protected int poder;
+    private static final long SerialVersionUID = 4224;
 
     public Hadas() {
     }

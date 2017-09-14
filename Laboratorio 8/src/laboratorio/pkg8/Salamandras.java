@@ -22,7 +22,7 @@ public class Salamandras extends Hadas{
 
     @Override
     public String toString() {
-        return "Salamandras{" + "alas=" + alas + '}';
+        return  nombre;
     }
     
 }

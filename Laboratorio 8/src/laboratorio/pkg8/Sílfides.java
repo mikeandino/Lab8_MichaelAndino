@@ -7,8 +7,9 @@ public class Sílfides extends Hadas{
         super();
     }
 
-    public Sílfides(String nombre, int edad, double salud, int estatura, int poder) {
+    public Sílfides(int alas, String nombre, int edad, double salud, int estatura, int poder) {
         super(nombre, edad, salud, estatura, poder);
+        this.alas = alas;
     }
 
     public int getAlas() {
@@ -21,7 +22,7 @@ public class Sílfides extends Hadas{
 
     @Override
     public String toString() {
-        return "S\u00edlfides{" + "alas=" + alas + '}';
+        return nombre;
     }
     
 }
