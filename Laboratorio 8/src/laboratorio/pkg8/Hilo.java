@@ -38,6 +38,7 @@ public class Hilo extends Thread {
                 hada2.setSalud(hada2.getSalud() - hada1.getPoder());
             }
             p2.setValue((int) hada2.getSalud());
+            p2.setString(hada2.getSalud()+"");
             if (hada2.getSalud() >= 0) {
                 fin = true;
                 ganador = hada1.getNombre();
@@ -58,6 +59,7 @@ public class Hilo extends Thread {
                     hada1.setSalud(hada1.getSalud() - hada2.getPoder());
                 }
                 p1.setValue((int) hada2.getSalud());
+                p1.setString(hada1.getSalud()+"");
                 if (hada1.getSalud() >= 0) {
                     fin = true;
                 }
