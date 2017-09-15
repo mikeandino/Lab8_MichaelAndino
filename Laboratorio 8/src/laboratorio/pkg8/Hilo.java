@@ -41,7 +41,7 @@ public class Hilo extends Thread {
             }
             p2.setValue((int) hada2.getSalud());
             p2.setString(hada2.getSalud()+"");
-            if (hada2.getSalud() >= 0) {
+            if (hada2.getSalud() <= 0) {
                 fin = true;
                 ganador = hada1.getNombre();
             }
@@ -70,10 +70,6 @@ public class Hilo extends Thread {
                     Thread.sleep(2000);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                if (hada1.getSalud() <= 0) {
-                    fin = true;
-                    
                 }
             }
         }
