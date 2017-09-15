@@ -25,8 +25,10 @@ public class Hilo extends Thread {
     public void run() {
         p1.setMaximum((int) hada1.getSalud());
         p1.setValue((int) hada1.getSalud());
-        p1.setMaximum((int) hada2.getSalud());
-        p1.setValue((int) hada2.getSalud());
+        p1.setString(hada2.getSalud()+"");
+        p2.setMaximum((int) hada2.getSalud());
+        p2.setValue((int) hada2.getSalud());
+        p2.setString(hada2.getSalud()+"");
         while (!fin) {
             if ((hada1 instanceof Salamandras) && (hada2 instanceof Hamadriades)) {
                 hada2.setSalud(hada2.getSalud() - (hada1.getPoder() + (hada1.getPoder() * 0.37)));
@@ -60,17 +62,18 @@ public class Hilo extends Thread {
                 }
                 p1.setValue((int) hada2.getSalud());
                 p1.setString(hada1.getSalud()+"");
-                if (hada1.getSalud() >= 0) {
+                if (hada1.getSalud() <= 0) {
                     fin = true;
+                    ganador = hada2.getNombre();
                 }
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                if (hada1.getSalud() >= 0) {
+                if (hada1.getSalud() <= 0) {
                     fin = true;
-                    ganador = hada1.getNombre();
+                    
                 }
             }
         }

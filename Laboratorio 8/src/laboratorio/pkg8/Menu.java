@@ -389,6 +389,10 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jProgressBar1.setStringPainted(true);
+
+        jProgressBar2.setStringPainted(true);
+
         jLabel15.setText("jLabel15");
 
         jLabel16.setText("jLabel16");
