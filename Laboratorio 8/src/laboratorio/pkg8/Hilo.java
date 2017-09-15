@@ -60,7 +60,7 @@ public class Hilo extends Thread {
                 } else {
                     hada1.setSalud(hada1.getSalud() - hada2.getPoder());
                 }
-                p1.setValue((int) hada2.getSalud());
+                p1.setValue((int) hada1.getSalud());
                 p1.setString(hada1.getSalud()+"");
                 if (hada1.getSalud() <= 0) {
                     fin = true;
