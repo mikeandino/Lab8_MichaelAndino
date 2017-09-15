@@ -20,7 +20,6 @@ public class Administrador_Hadas {
 
     public Administrador_Hadas(String path) {
         archivo = new File(path);
-        cargarArchivo();
     }
 
     public File getArchivo() {
